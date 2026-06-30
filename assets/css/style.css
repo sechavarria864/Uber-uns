@@ -2486,16 +2486,13 @@ p {
 
 /* Pill badge */
 .solar-hero__badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0;
-  background: #F2E519;
-  border-radius: 999px;
-  padding: 0.4rem 1rem;
+  display: inline-block;
+  background: none;
+  border-radius: 0;
+  padding: 0;
   font-size: 0.875rem;
   font-weight: 400;
   color: #000000;
-  width: fit-content;
 }
 
 .solar-hero__badge strong {

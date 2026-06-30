@@ -3371,6 +3371,11 @@ p {
   padding: 28px 32px 28px 24px;
 }
 
+.public-tender__column--list {
+  border-left: none;
+  padding-left: 0;
+}
+
 .public-tender__headline {
   font-family: Impact, sans-serif;
   font-size: clamp(1.35rem, 2vw, 1.9rem);
@@ -3438,6 +3443,10 @@ p {
 
   .public-tender__column {
     padding: 20px 20px 20px 14px;
+  }
+
+  .public-tender__column--list {
+    padding-left: 0;
   }
 
   .public-tender__list {

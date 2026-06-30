@@ -2573,32 +2573,51 @@ p {
   opacity: 0.8;
 }
 
-/* ── RIGHT COLUMN — single image card (desktop = full column height) ── */
+/* ─────────────────────────────────────────────────────────────
+   SOLAR HERO — RIGHT COLUMN IMAGE
+   Plan B:
+   - desktop/tablet: image fills the full right column height
+   - mobile: fixed compact card height
+   - no carousel behavior
+   - no overlay text
+───────────────────────────────────────────────────────────── */
+
+/* Make both hero columns stretch to the same row height */
+.solar-hero {
+  align-items: stretch;
+}
+
+.solar-hero__right {
+  display: flex;
+  min-height: 100%;
+}
+
+/* RIGHT COLUMN — single image wrapper */
 .solar-hero__carousel-outer {
+  position: relative;
   width: 100%;
-  height: 100%;
+  flex: 1 1 auto;
   overflow: visible;
   clip-path: none;
 }
 
 .solar-hero__carousel-track {
-  display: flex;
-  justify-content: flex-end;
+  position: relative;
   width: 100%;
   height: 100%;
+  min-height: 100%;
+  display: block;
   transform: none !important;
   transition: none !important;
 }
 
+/* Desktop/tablet: make the card fill the full available right-column height */
 .solar-hero__slide {
-  width: 100%;
-  max-width: 480px;
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: min(100%, 480px);
   height: 100%;
-  min-height: 100%;
-  position: relative;
   overflow: hidden;
-  flex-shrink: 0;
-  align-self: stretch;
   clip-path: polygon(
     0 0,
     100% 0,
@@ -2611,6 +2630,7 @@ p {
     drop-shadow(0 1px 3px rgba(0, 0, 0, 0.08));
 }
 
+/* Fill the card fully */
 .solar-hero__slide img {
   width: 100%;
   height: 100%;
@@ -2619,7 +2639,7 @@ p {
   display: block;
 }
 
-/* Always hide old overlay/text */
+/* Remove old overlay/text completely */
 .solar-hero__slide-overlay,
 .solar-hero__slide-label,
 .solar-hero__slide-number,
@@ -2628,7 +2648,7 @@ p {
 }
 
 
-/* ── MOBILE (≤767px) ── */
+/* ── MOBILE (≤767px) ───────────────────────────────────────── */
 @media (max-width: 767px) {
   body {
     padding-top: 0;
@@ -2667,26 +2687,31 @@ p {
     display: none;
   }
 
+  .solar-hero__right {
+    display: block;
+    min-height: 0;
+  }
+
   .solar-hero__carousel-outer {
-    width: 100%;
+    position: relative;
     height: auto;
+    min-height: 0;
     overflow: visible;
     padding: 0 24px 24px;
   }
 
   .solar-hero__carousel-track {
-    display: block;
-    width: 100%;
     height: auto;
-    transform: none !important;
-    transition: none !important;
+    min-height: 0;
   }
 
   .solar-hero__slide {
+    position: relative;
+    inset: auto;
     width: 100%;
-    max-width: none;
     height: 280px;
     min-height: 0;
+    max-width: none;
     margin: 0;
     clip-path: polygon(
       0 0,
@@ -2706,7 +2731,7 @@ p {
 }
 
 
-/* ── TABLET (768–1023px) ── */
+/* ── TABLET (768–1023px) ───────────────────────────────────── */
 @media (min-width: 768px) and (max-width: 1023px) {
   body {
     padding-top: 0;
@@ -2725,19 +2750,25 @@ p {
     font-size: clamp(1.5rem, 3vw, 2rem);
   }
 
+  .solar-hero__right {
+    display: flex;
+    min-height: 100%;
+  }
+
   .solar-hero__carousel-outer {
     height: 100%;
   }
 
   .solar-hero__carousel-track {
     height: 100%;
+    min-height: 100%;
   }
 
   .solar-hero__slide {
-    width: 100%;
-    max-width: 420px;
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: min(100%, 420px);
     height: 100%;
-    min-height: 100%;
   }
 }
 

@@ -1605,7 +1605,7 @@ p {
 
 .data-protection {
   padding: 80px 24px;
-  background: #F4F5F6;
+  background: #F4F5F6 ;
 }
 
 .data-protection__inner {
@@ -1654,7 +1654,7 @@ p {
 
 .data-protection__card {
   position: relative;
-  padding-top: 36px;
+  padding-top: 36px; /* half icon height — space for the float */
   display: flex;
   flex-direction: column;
 }
@@ -1676,7 +1676,7 @@ p {
   width: 72px;
   height: 72px;
   object-fit: contain;
-  filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.20));
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.20));
 }
 
 .dp-card-body {
@@ -1708,15 +1708,25 @@ p {
 
   .data-protection__grid {
     grid-template-columns: 1fr;
+    gap: 48px; /* extra gap to accommodate floating icon */
+  }
+}
+
+@media (max-width: 767px) {
+  .data-protection {
+    padding: 48px 24px;
+  }
+
+  .data-protection__grid {
+    grid-template-columns: 1fr;
     gap: 32px;
   }
 
-  .dp-icon-float img {
+  .data-protection__card img {
     width: 68px;
     height: 68px;
   }
 }
-
 /* ============================================================
    MAX FLEXIBILITAET SECTION
    ============================================================ */

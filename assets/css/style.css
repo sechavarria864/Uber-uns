@@ -2573,27 +2573,36 @@ p {
   opacity: 0.8;
 }
 
-/* ── RIGHT COLUMN — overflow carousel ── */
+/* ── RIGHT COLUMN — single image card ───────────────────────────── */
 .solar-hero__carousel-outer {
+  width: 100%;
   overflow: visible;
-  clip-path: inset(0 -9999px 0 0);
+  clip-path: none;
 }
 
 .solar-hero__carousel-track {
-  display: flex;
-  gap: 16px;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  display: block;
+  width: 100%;
+  transform: none !important;
+  transition: none !important;
 }
 
-/* Individual slide cards — explicit height like flexibilitaet__slide */
 .solar-hero__slide {
-  flex-shrink: 0;
-  width: 75%;
+  width: min(480px, 100%);
   height: clamp(360px, 50vh, 520px);
   position: relative;
   overflow: hidden;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.10)) drop-shadow(0 1px 3px rgba(0,0,0,0.08));
+  flex-shrink: 0;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%
+  );
+  filter:
+    drop-shadow(0 4px 12px rgba(0, 0, 0, 0.10))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.08));
 }
 
 .solar-hero__slide img {
@@ -2604,43 +2613,17 @@ p {
   display: block;
 }
 
-/* Overlay — hidden on desktop, visible on mobile */
-.solar-hero__slide-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.88) 100%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-/* Stat label on card — hidden on desktop, visible on mobile */
-.solar-hero__slide-label {
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.solar-hero__slide-number {
-  font-size: 2.25rem;
-  font-weight: 200;
-  color: #ffffff;
-  line-height: 1;
-}
-
+/* Hide old overlay/text everywhere */
+.solar-hero__slide-overlay,
+.solar-hero__slide-label,
+.solar-hero__slide-number,
 .solar-hero__slide-sublabel {
-  font-size: 0.75rem;
-  color: rgba(255,255,255,0.85);
-  font-weight: 400;
+  display: none !important;
 }
 
-/* ── MOBILE (≤767px) ── */
-@media (max-width: 767px) {
 
+/* ── MOBILE (≤767px) ───────────────────────────────────────────── */
+@media (max-width: 767px) {
   body {
     padding-top: 0;
   }
@@ -2653,8 +2636,8 @@ p {
 
   .solar-hero__left {
     padding: 0 24px 32px;
-    align-items: flex-start; /* was: center */
-    text-align: left;        /* was: center */
+    align-items: flex-start;
+    text-align: left;
     margin-left: 0;
     max-width: 100%;
     gap: 1rem;
@@ -2662,7 +2645,7 @@ p {
 
   .solar-hero__title {
     font-size: clamp(1.5rem, 6vw, 2rem);
-    text-align: left; /* was: center */
+    text-align: left;
   }
 
   .solar-hero__btn-full {
@@ -2679,55 +2662,43 @@ p {
   }
 
   .solar-hero__carousel-outer {
-    clip-path: none;
-    overflow-x: auto;
-    overflow-y: visible;
+    width: 100%;
+    overflow: visible;
     padding: 0 24px 24px;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
-  .solar-hero__carousel-outer::-webkit-scrollbar {
-    display: none;
   }
 
   .solar-hero__carousel-track {
-    width: max-content;
+    display: block;
+    width: 100%;
     transform: none !important;
-    transition: none;
+    transition: none !important;
   }
 
   .solar-hero__slide {
-    width: 288px;
-    height: 280px;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%);
-  }
-
-  .solar-hero__slide-overlay {
-    opacity: 1;
-  }
-
-  .solar-hero__slide-label {
-    opacity: 1;
-  }
-
-  .solar-hero__slide-number {
-    font-size: 1.75rem;
-  }
-
-  .solar-hero__slide-label::before {
-    content: '';
-    display: block;
     width: 100%;
-    height: 1px;
-    background: #F2E519;
-    margin-bottom: 8px;
+    height: 280px;
+    max-width: none;
+    margin: 0;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 24px),
+      calc(100% - 24px) 100%,
+      0 100%
+    );
+  }
+
+  .solar-hero__slide-overlay,
+  .solar-hero__slide-label,
+  .solar-hero__slide-number,
+  .solar-hero__slide-sublabel {
+    display: none !important;
   }
 }
 
-/* ── TABLET (768–1023px) ── */
-@media (min-width: 768px) and (max-width: 1023px) {
 
+/* ── TABLET (768–1023px) ───────────────────────────────────────── */
+@media (min-width: 768px) and (max-width: 1023px) {
   body {
     padding-top: 0;
   }
@@ -2745,9 +2716,12 @@ p {
   }
 
   .solar-hero__slide {
+    width: min(420px, 100%);
     height: clamp(300px, 45vh, 420px);
   }
 }
+
+
 /* ============================================================
    SOLARENERGIE SECTION — mirrors .flexibilitaet styles
    ============================================================ */

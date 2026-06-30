@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Page</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo-link" aria-label="VIDEO GUARD">
+      <img
+        src="./assets/images/logos/Video Guard LOGO Black.png"
+        alt="VIDEO GUARD Logo"
+        class="site-logo"
+      >
+    </a>
+
+    <nav class="desktop-nav" aria-label="Hauptnavigation">
+      <a href="#">Überwachung</a>
+      <a href="#">Brandfrüherkennung</a>
+      <a href="#">Über uns</a>
+      <a href="#">Kontakt</a>
+    </nav>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      type="button"
+      aria-label="Menü öffnen"
+      aria-expanded="false"
+      aria-controls="mobileMenu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileMenu" aria-label="Mobile Navigation">
+    <a href="#">Überwachung</a>
+    <a href="#">Brandfrüherkennung</a>
+    <a href="#">Über uns</a>
+    <a href="#">Kontakt</a>
+  </nav>
+</header>
+
+<section class="solar-hero">
+
+<!-- ── LEFT COLUMN ── -->
+<div class="solar-hero__left">
+
+<!-- Pill badge -->
+<div class="solar-hero__badge">
+<strong>VIDEO GUARD PROFESSIONAL</strong>
+</div>
+
+<!-- Title — h1 using locally-hosted Impact font -->
+<h1 class="solar-hero__title">
+Professionelle Videoüberwachung.
+<strong><span class="solar-hero__highlight">Rund um die Uhr.</span></strong>
+</h1>
+
+<!-- CTA button -->
+<a href="#" class="solar-hero__btn">
+<span class="solar-hero__btn-full">Kostenloses Angebot anfragen</span>
+<span class="solar-hero__btn-short">Angebot anfragen</span>
+</a>
+
+<!-- Divider + stats (desktop only) -->
+<div class="solar-hero__divider"></div>
+
+<div class="solar-hero__stats">
+<div class="solar-hero__stat">
+<div class="solar-hero__stat-number counter" data-target="275301">0</div>
+<div class="solar-hero__stat-label">Gefahren abgewendet</div>
+</div>
+<div class="solar-hero__stat">
+<div class="solar-hero__stat-number counter" data-target="8217">0</div>
+<div class="solar-hero__stat-label">Geschützte Baustellen</div>
+</div>
+<div class="solar-hero__stat">
+<div class="solar-hero__stat-number counter" data-target="2226">0</div>
+<div class="solar-hero__stat-label">Zufriedene Kunden</div>
+</div>
+</div>
+
+</div>
+
+<!-- ── RIGHT COLUMN (carousel — cards slide right, visible overflow) ── -->
+<div class="solar-hero__carousel-outer">
+<div class="solar-hero__carousel-track" id="solarTrack">
+
+<div class="solar-hero__slide">
+<img
+src="./assets/images/Images/Prof 1.png"
+alt="Solar-Überwachung – 275.301 Gefahren abgewendet"
+loading="eager"
+width="480" height="600"
+>
+<div class="solar-hero__slide-overlay"></div>
+<div class="solar-hero__slide-label">
+<span class="solar-hero__slide-number">275.301</span>
+<span class="solar-hero__slide-sublabel">Gefahren abgewendet</span>
+</div>
+</div>
+
+<div class="solar-hero__slide">
+<img
+src="./assets/images/Images/Prof 2.png"
+alt="Solar-Überwachung – 8.217 Geschützte Baustellen"
+loading="lazy"
+width="480" height="600"
+>
+<div class="solar-hero__slide-overlay"></div>
+<div class="solar-hero__slide-label">
+<span class="solar-hero__slide-number">8.217</span>
+<span class="solar-hero__slide-sublabel">Geschützte Baustellen</span>
+</div>
+</div>
+
+<div class="solar-hero__slide">
+<img
+src="./assets/images/Images/Prof 3.png"
+alt="Solar-Überwachung – 2.226 Zufriedene Kunden"
+loading="lazy"
+width="480" height="600"
+>
+<div class="solar-hero__slide-overlay"></div>
+<div class="solar-hero__slide-label">
+<span class="solar-hero__slide-number">2.226</span>
+<span class="solar-hero__slide-sublabel">Zufriedene Kunden</span>
+</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+
+<!-- ── SOLAR FEATURES BAR ── -->
+<section class="solar-features">
+  <div class="solar-features__grid">
+
+    <div class="solar-features__col">
+      <p class="solar-features__headline">Rundum-Sicht ohne tote Winkel</p>
+      <p class="solar-features__sub">durch drei hochauflösende Kameras für eine vollständige Abdeckung</p>
+    </div>
+
+    <div class="solar-features__col">
+      <p class="solar-features__headline">Intelligente Videoanalyse</p>
+      <p class="solar-features__sub">vom Weltmarktführer – KI erkennt echte Gefahren und filtert Fehlalarme heraus</p>
+    </div>
+
+    <div class="solar-features__col">
+      <p class="solar-features__headline">Klare Sicht bei Nacht</p>
+      <p class="solar-features__sub">dank Infrarot-Technologie und hoher Bildqualität</p>
+    </div>
+
+    <div class="solar-features__col">
+      <p class="solar-features__headline">120 dB Täteransprache</p>
+      <p class="solar-features__sub">zur direkten Abschreckung von Eindringlingen</p>
+    </div>
+
+  </div>
+</section>
+   
+ <!-- ============================================================
+   CAMERA NIGHT SECTION — image left, text right
+   ============================================================ -->
+<section class="night-intro">
+  <div class="night-intro__inner">
+    <div class="night-intro__desktop">
+
+      <!-- Left: image -->
+      <div class="night-intro__image-wrap">
+        <img
+            src="./assets/images/Images/Solar top v1.png"
+          alt="VIDEO GUARD Solar – Überwachung bei Tag und Nacht"
+          loading="lazy"
+        >
+      </div>
+
+      <!-- Right: text + CTAs -->
+      <div class="night-intro__left">
+        <div class="night-intro__title-wrap">
+          <div class="night-intro__accent-bar"></div>
+          <h2 class="night-intro__title">Aufnahmen bei Tag <span class="highlight-yellow">und Nacht</span></h2>
+        </div>
+        <p class="night-intro__text">
+          Der VIDEO GUARD PROFESSIONAL erfasst mit drei hochauflösenden Ultra-Lowlight-Kameras in sechs Metern Höhe jeden Winkel Ihres Objekts – selbst bei schwacher Beleuchtung.
+        </p>
+        <p class="night-intro__text night-intro__text--bold">
+          Drei Hochleistungs-Infrarot-Scheinwerfer liefern gestochen scharfe Nachtbilder, während der integrierte Aktivlautsprecher mit bis zu 120 dB eine sofortige Täteransprache durch die Leitstelle ermöglicht.
+        </p>
+        <div class="night-intro__cta-row">
+          <button class="night-intro__btn night-intro__btn--primary" onclick="document.querySelector('[data-section=&quot;angebot-erhalten&quot;]')?.scrollIntoView({behavior:'smooth',block:'start'})">
+            Jetzt Objekt Schützen
+          </button>
+          <button class="night-intro__btn night-intro__btn--secondary">Mehr erfahren</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+      <!-- MOBILE: stacked -->
+    <div class="night-intro__mobile">
+      <div class="night-intro__title-wrap">
+        <div class="night-intro__accent-bar"></div>
+        <h2 class="night-intro__title">Aufnahmen bei Tag <span class="highlight-yellow">und Nacht</span></h2>
+      </div>
+      <div class="night-intro__image-wrap night-intro__image-wrap--mobile">
+        <img
+          src="./assets/images/Images/Solar top v1.png"
+          alt="VIDEO GUARD Solar – Überwachung bei Tag und Nacht"
+          loading="lazy"
+        >
+      </div>
+      <p class="night-intro__text">
+        Der VIDEO GUARD SOLAR bietet mit seinen Hochleistungskameras einen 180°-Blickwinkel,
+        der eine umfassende Überwachung ermöglicht.
+      </p>
+      <p class="night-intro__text night-intro__text--bold">
+        Dank der Infrarot-Technologie ist auch bei Nacht eine klare Sicht gewährleistet,
+        während der 120 dB Lautsprecher eine sofortige Täteransprache ermöglicht, um
+        Eindringlinge effektiv abzuschrecken.
+      </p>
+      <div class="night-intro__cta-row">
+        <button class="night-intro__btn night-intro__btn--primary" onclick="document.querySelector('[data-section=&quot;angebot-erhalten&quot;]')?.scrollIntoView({behavior:'smooth',block:'start'})">
+          Jetzt Objekt Schützen
+        </button>
+        <button class="night-intro__btn night-intro__btn--secondary">Mehr erfahren</button>
+      </div>
+    </div>
+</section>
+
+   <!-- ============================================================
+   SOLAR INTRO SECTION — mirrors .kooi layout
+   ============================================================ -->
+<section class="solar-intro">
+  <div class="solar-intro__inner">
+
+    <!-- DESKTOP: 2-column layout -->
+    <div class="solar-intro__desktop">
+
+      <!-- Left: text + CTAs -->
+      <div class="solar-intro__left">
+        <div class="solar-intro__title-wrap">
+          <div class="solar-intro__accent-bar"></div>
+          <h2 class="solar-intro__title">Ausfallsicher und <span class="highlight-yellow">jederzeit einsatzbereit.</span></h2>
+        </div>
+        <p class="solar-intro__text">
+          Dank des integrierten Akku-Backups läuft die Überwachung inklusive Beleuchtung auch bei Stromausfall oder Netzstörungen nahtlos weiter.
+        </p>
+        <p class="solar-intro__text solar-intro__text--bold">
+          Selbst bei Sabotage bleibt die Energieversorgung stabil – ideal für Baustellen, Solarparks und temporäre Einsatzorte ohne zuverlässigen Stromanschluss.
+        </p>
+        <div class="solar-intro__cta-row">
+          <button class="solar-intro__btn solar-intro__btn--primary" onclick="document.querySelector('[data-section=&quot;angebot-erhalten&quot;]')?.scrollIntoView({behavior:'smooth',block:'start'})">
+            Jetzt Objekt Schützen
+          </button>
+          <button class="solar-intro__btn solar-intro__btn--secondary">Mehr erfahren</button>
+        </div>
+      </div>
+
+      <!-- Right: image -->
+      <div class="solar-intro__image-wrap">
+        <img
+          src="./assets/images/Images/Prof 4.png"
+          alt="VIDEO GUARD Solar – netzunabhängige Überwachung"
+          loading="lazy"
+        >
+      </div>
+    </div>
+
+    <!-- MOBILE: stacked -->
+    <div class="solar-intro__mobile">
+      <div class="solar-intro__title-wrap">
+        <div class="solar-intro__accent-bar"></div>
+        <h2 class="solar-intro__title">Netzstromunabhängig, <span class="highlight-yellow">jederzeit einsatzbereit.</span></h2>
+      </div>
+      <div class="solar-intro__image-wrap solar-intro__image-wrap--mobile">
+        <img
+          src="./assets/images/Images/Prof 4.png"
+          alt="VIDEO GUARD Solar – netzunabhängige Überwachung"
+          loading="lazy"
+        >
+      </div>
+      <p class="solar-intro__text">
+        Dank der intelligenten Kombination aus Photovoltaik, moderner Akku-Technologie und
+        umweltfreundlicher Brennstoffzelle arbeitet der VIDEO GUARD SOLAR vollständig autark.
+      </p>
+      <p class="solar-intro__text solar-intro__text--bold">
+        Selbst bei geringer Sonneneinstrahlung bleibt die Energieversorgung stabil – ideal für
+        abgelegene oder temporäre Einsatzorte ohne zuverlässigen Stromanschluss.
+      </p>
+      <div class="solar-intro__cta-row">
+        <button class="solar-intro__btn solar-intro__btn--primary" onclick="document.querySelector('[data-section=&quot;angebot-erhalten&quot;]')?.scrollIntoView({behavior:'smooth',block:'start'})">
+          Jetzt Objekt Schützen
+        </button>
+        <button class="solar-intro__btn solar-intro__btn--secondary">Mehr erfahren</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+ 
+ <!-- ============================================================
+     ANGEBOT ERHALTEN SECTION (Change here)
+     ============================================================ -->
+<section class="angebot" data-section="angebot-erhalten">
+  <div class="angebot__inner">
+    <div class="angebot__title-wrap">
+      <div class="angebot__accent-bar"></div>
+      <h2 class="angebot__title">Aktive Abschreckung rund um die Uhr</h2>
+    </div>
+    <p class="angebot__text">
+      Das auffällige gelbe Design, die klare Warnbeschriftung und die Echtzeit-Täteransprache mit bis zu 120 dB signalisieren unmissverständlich: Dieses Gelände wird professionell videoüberwacht. 
+    </p>
+    <p class="angebot__text">
+      <strong>Modernste KI-Videoanalyse vom Weltmarktführer erkennt echte Gefahren sekundenschnell und filtert Fehlalarme zuverlässig heraus – ohne Personaleinsatz.</strong>
+    </p>
+  </div>
+</section>
+ 
+
+  <!-- ============================================================
+     HOW IT WORKS CARDS SECTION
+     Files needed:
+       - ./assets/images/icons/VG_EYE_ICON.png
+       - ./assets/videos/In_Aktion_ansehen_3.mp4
+     ============================================================ -->
+<section class="how-it-works">
+  <div class="how-it-works__inner">
+
+    <!-- Title + description -->
+    <div class="how-it-works__header">
+      <div class="how-it-works__title-wrap">
+        <div class="how-it-works__accent-bar"></div>
+        <h2 class="how-it-works__title">So funktioniert unsere <br><span class="highlight-yellow">mobile Videoüberwachung</span></h2>
+      </div>
+      <p class="how-it-works__subtitle">
+        Unser bewährter 3-Schritte-Prozess zeigt, wie mobile Baustellenüberwachung in der Praxis
+        funktioniert: modernste Kameratechnik kombiniert mit professioneller Live-Überwachung. Vom
+        Erkennen einer Bedrohung bis zur Intervention durch Einsatzkräfte vergehen
+        <strong>in der Regel weniger als 60 Sekunden.</strong>
+      </p>
+    </div>
+
+    <!-- Full-width video -->
+    <div class="how-it-works__video-wrap">
+      <video
+        class="how-it-works__video"
+        src="./assets/videos/In_Aktion_ansehen_3.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+      ></video>
+    </div>
+
+    <!-- Desktop: 3 columns -->
+    <div class="how-it-works__cards how-it-works__cards--desktop">
+      <div class="how-it-works__card">
+        <img src="./assets/images/icons/VG_EYE_ICON.png" alt="VIDEO GUARD" width="56" height="56">
+        <h3>Detektieren</h3>
+        <p>Hochauflösende Kameras mit Bosch- und Avigilon-Edge-Technologie überwachen Ihre Baustelle rund um die Uhr. Unsere KI-Videoanalytik unterscheidet zuverlässig zwischen tatsächlichen Bedrohungen und harmlosen Bewegungen wie Tieren oder Wind.</p>
+      </div>
+      <div class="how-it-works__card">
+        <img src="./assets/images/icons/VG_EYE_ICON.png" alt="VIDEO GUARD" width="56" height="56">
+        <h3>Reagieren</h3>
+        <p>In unserer 24/7-Leitstelle in Deutschland bewerten geschulte Mitarbeiter die Situation in Echtzeit. Bei einem Vorfall sprechen sie Eindringlinge gezielt über den Lautsprecher am Kameraturm mit bis zu 120 Dezibel an.</p>
+      </div>
+      <div class="how-it-works__card">
+        <img src="./assets/images/icons/VG_EYE_ICON.png" alt="VIDEO GUARD" width="56" height="56">
+        <h3>Intervenieren</h3>
+        <p>Bleibt die Ansprache wirkungslos, alarmieren wir auf Wunsch direkt Polizei oder Wachdienst. Live-Bilder werden in Echtzeit weitergegeben, sodass die Einsatzkräfte vorbereitet eintreffen.</p>
+      </div>
+    </div>
+
+    <!-- Mobile: vertical stack -->
+    <div class="how-it-works__cards how-it-works__cards--mobile">
+      <div class="how-it-works__card how-it-works__card--mobile">
+        <img src="./assets/images/icons/VG_EYE_ICON.png" alt="VIDEO GUARD" width="48" height="48">
+        <div>
+          <h3>Detektieren</h3>
+          <p>Hochauflösende Kameras mit Bosch- und Avigilon-Edge-Technologie überwachen Ihre Baustelle rund um die Uhr. Unsere KI-Videoanalytik unterscheidet zuverlässig zwischen tatsächlichen Bedrohungen und harmlosen Bewegungen wie Tieren oder Wind.</p>
+        </div>
+      </div>
+      <div class="how-it-works__card how-it-works__card--mobile">
+        <img src="./assets/images/icons/VG_EYE_ICON.png" alt="VIDEO GUARD" width="48" height="48">
+        <div>
+          <h3>Reagieren</h3>
+          <p>In unserer 24/7-Leitstelle in Deutschland bewerten geschulte Mitarbeiter die Situation in Echtzeit. Bei einem Vorfall sprechen sie Eindringlinge gezielt über den Lautsprecher am Kameraturm mit bis zu 120 Dezibel an.</p>
+        </div>
+      </div>
+      <div class="how-it-works__card how-it-works__card--mobile">
+        <img src="./assets/images/icons/VG_EYE_ICON.png" alt="VIDEO GUARD" width="48" height="48">
+        <div>
+          <h3>Intervenieren</h3>
+          <p>Bleibt die Ansprache wirkungslos, alarmieren wir auf Wunsch direkt Polizei oder Wachdienst. Live-Bilder werden in Echtzeit weitergegeben, sodass die Einsatzkräfte vorbereitet eintreffen.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+   
+ <!-- ============================================================
+     ANGEBOT ERHALTEN SECTION
+     ============================================================ -->
+<section class="angebot" data-section="angebot-erhalten">
+  <div class="angebot__inner">
+    <div class="angebot__title-wrap">
+      <div class="angebot__accent-bar"></div>
+      <h2 class="angebot__title">Angebot Erhalten</h2>
+    </div>
+    <p class="angebot__text">
+      Erfahren Sie, warum unsere Lösungen nachweislich eine höhere Leistung liefern als die der Konkurrenz. Sichern Sie sich jetzt Ihre kostenfreie Beratung und Angebot.
+    </p>
+    <p class="angebot__text">
+      Wir melden uns Mo.–Fr. 8–17 Uhr <strong>innerhalb von 60 Minuten bei Ihnen.</strong>
+    </p>
+  </div>
+</section>
+ 
+
+  <!-- ============================================================
+     TESTIMONIALS CAROUSEL SECTION
+     Files needed:
+       - ./assets/images/Images/Testimonial_1.png
+       - ./assets/images/Images/Testimonial_2.png
+       - ./assets/images/Images/Testimonial_3.png
+       - ./assets/images/Images/Testimonial_4.png
+       - ./assets/images/logos/Client_Logo_1.png  (ZÜBLIN)
+       - ./assets/images/logos/Client_Logo_2.png  (Deutsche Bahn)
+       - ./assets/images/logos/Client_Logo_3.png  (mainova)
+       - ./assets/images/logos/Client_Logo_4.png  (Vestas)
+       - ./assets/images/logos/Client_Logo_5.png  (STRABAG)
+       - ./assets/images/logos/Client_Logo_6.png  (GE)
+     ============================================================ -->
+<section class="testimonials">
+  <div class="testimonials__inner">
+
+    <!-- Title -->
+    <div class="testimonials__title-wrap">
+      <div class="testimonials__accent-bar"></div>
+     <h2 class="testimonials__title">Zufriedene <br>Video Guard Kunden</h2>
+    </div>
+
+    <!-- Two-column: testimonials left, logo wheel right -->
+    <div class="testimonials__grid">
+
+      <!-- Left: rotating testimonial cards -->
+      <div class="testimonials__cards-col">
+        <div class="testimonials__cards-stage" id="testimonialsStage">
+
+          <div class="testimonials__card active">
+            <div class="testimonials__card-bar"></div>
+            <div class="testimonials__card-logo">
+              <img src="./assets/images/Images/Testimonial_1.png" alt="Company logo">
+            </div>
+            <p class="testimonials__card-text">"Durch die Zusammenarbeit mit Videoguard24 konnte dieser Partner gefunden werden und erfüllt unsere Erwartungshaltung in allen Blickwinkeln."</p>
+            <div class="testimonials__card-author">
+              <p class="testimonials__author-name">Alexander L. Tillmann</p>
+              <p class="testimonials__author-company">Unternehmens-sicherheitsmanager - Mainova AG</p>
+            </div>
+          </div>
+
+          <div class="testimonials__card">
+            <div class="testimonials__card-bar"></div>
+            <div class="testimonials__card-logo">
+              <img src="./assets/images/Images/Testimonial_2.png" alt="Company logo">
+            </div>
+            <p class="testimonials__card-text">"Wir empfehlen VIDEO GUARD wegen der außergewöhnlich hohen Kommunikationsbereitschaft und dem zuverlässigen Arbeitsverhältnis auch bei Problemen!"</p>
+            <div class="testimonials__card-author">
+              <p class="testimonials__author-name">Marco Burghardt</p>
+              <p class="testimonials__author-company">Bau- und Projektmanagement Bonn</p>
+            </div>
+          </div>
+
+          <div class="testimonials__card">
+            <div class="testimonials__card-bar"></div>
+            <div class="testimonials__card-logo">
+              <img src="./assets/images/Images/Testimonial_3.png" alt="Company logo">
+            </div>
+            <p class="testimonials__card-text">"VIDEO GUARD bietet für uns das sicherste Gesamtkonzept im Zusammenspiel zwischen hervorragender Technik, Selbstüberwachung und professionellem Personal in der Leitstelle"</p>
+            <div class="testimonials__card-author">
+              <p class="testimonials__author-name">Nils Netzer</p>
+              <p class="testimonials__author-company">E-Shelter</p>
+            </div>
+          </div>
+
+          <div class="testimonials__card">
+            <div class="testimonials__card-bar"></div>
+            <div class="testimonials__card-logo">
+              <img src="./assets/images/Images/Testimonial_4.png" alt="Company logo">
+            </div>
+            <p class="testimonials__card-text">"Ich möchte VIDEO GUARD in Zukunft am liebsten auf jeder Baustelle dabeihaben."</p>
+            <div class="testimonials__card-author">
+              <p class="testimonials__author-name">Jörg Fritz</p>
+              <p class="testimonials__author-company">MBN Bau GmbH</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Dots -->
+        <div class="testimonials__dots" id="testimonialsDots">
+          <button class="testimonials__dot active" data-index="0" aria-label="Testimonial 1"></button>
+          <button class="testimonials__dot" data-index="1" aria-label="Testimonial 2"></button>
+          <button class="testimonials__dot" data-index="2" aria-label="Testimonial 3"></button>
+          <button class="testimonials__dot" data-index="3" aria-label="Testimonial 4"></button>
+        </div>
+      </div>
+
+      <!-- Right: scrolling logo wheel -->
+      <div class="testimonials__logos-col">
+        <div class="testimonials__logos-fade testimonials__logos-fade--left"></div>
+        <div class="testimonials__logos-fade testimonials__logos-fade--right"></div>
+        <div class="testimonials__logos-track">
+          <!-- First set -->
+          <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_1.png" alt="ZÜBLIN" height="50"></div>
+          <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_2.png" alt="Deutsche Bahn" height="50"></div>
+          <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_3.png" alt="mainova" height="50"></div>
+          <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_4.png" alt="Vestas" height="50"></div>
+          <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_5.png" alt="STRABAG" height="50"></div>
+          <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_6.png" alt="GE" height="50"></div>
+          <!-- Duplicate for seamless loop -->
+          <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_1.png" alt="ZÜBLIN" height="50"></div>
+          <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_2.png" alt="Deutsche Bahn" height="50"></div>
+          <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_3.png" alt="mainova" height="50"></div>
+          <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_4.png" alt="Vestas" height="50"></div>
+          <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_5.png" alt="STRABAG" height="50"></div>
+          <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_6.png" alt="GE" height="50"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Mobile logo wheel (below cards) -->
+    <div class="testimonials__logos-mobile">
+      <div class="testimonials__logos-fade testimonials__logos-fade--left"></div>
+      <div class="testimonials__logos-fade testimonials__logos-fade--right"></div>
+      <div class="testimonials__logos-track testimonials__logos-track--mobile">
+        <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_1.png" alt="ZÜBLIN" height="28"></div>
+        <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_2.png" alt="Deutsche Bahn" height="28"></div>
+        <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_3.png" alt="mainova" height="28"></div>
+        <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_4.png" alt="Vestas" height="28"></div>
+        <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_5.png" alt="STRABAG" height="28"></div>
+        <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_6.png" alt="GE" height="28"></div>
+        <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_1.png" alt="ZÜBLIN" height="28"></div>
+        <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_2.png" alt="Deutsche Bahn" height="28"></div>
+        <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_3.png" alt="mainova" height="28"></div>
+        <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_4.png" alt="Vestas" height="28"></div>
+        <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_5.png" alt="STRABAG" height="28"></div>
+        <div class="testimonials__logo-item"><img src="./assets/images/logos/Client_Logo_6.png" alt="GE" height="28"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ 
+
+ 
+
+
+<!-- ============================================================
+     FAQ SECTION
+     ============================================================ -->
+<section class="faq">
+  <div class="faq__inner">
+
+    <div class="faq__title-wrap">
+      <div class="faq__accent-bar"></div>
+      <h2 class="faq__title"><span class="highlight-yellow">Häufige Fragen</span> zur mobilen <br>Videoüberwachung auf Baustellen</h2>
+    </div>
+    <p class="faq__subtitle">
+      Sie haben Fragen rund um Baustellensicherheit, DSGVO, Kosten oder den Ablauf? Hier finden
+      Sie die häufigsten Antworten auf einen Blick. Ihre Frage ist nicht dabei?
+      <strong>Sprechen Sie uns direkt an.</strong>
+    </p>
+
+    <div class="faq__list" id="faqList">
+
+      <div class="faq__item">
+        <div class="faq__divider"></div>
+        <button class="faq__trigger" aria-expanded="false">
+          <span>Wie schnell kann das System installiert werden?</span>
+          <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq__answer">
+          <p>In der Regel erfolgt die Installation innerhalb von 24–48 Stunden nach Auftragserteilung. Unser Team koordiniert Lieferung, Aufbau und Konfiguration direkt vor Ort – ohne Unterbrechung Ihres Betriebs.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <div class="faq__divider"></div>
+        <button class="faq__trigger" aria-expanded="false">
+          <span>Ist die Lösung DSGVO-konform?</span>
+          <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq__answer">
+          <p>Ja. Unsere Systeme sind vollständig DSGVO-konform ausgelegt. Das umfasst klar sichtbare Hinweisschilder, verschlüsselte Datenübertragung, kontrollierte Zugriffsverwaltung sowie die vollständige DSGVO-Dokumentation, die wir Ihnen bereitstellen.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <div class="faq__divider"></div>
+        <button class="faq__trigger" aria-expanded="false">
+          <span>Was kostet die mobile Baustellenüberwachung?</span>
+          <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq__answer">
+          <p>Die Mietpreise richten sich nach der Anzahl der Kameratürme, dem Überwachungsumfang und der Laufzeit. Wir erstellen Ihnen innerhalb von 60 Minuten ein individuelles Angebot – ohne versteckte Kosten.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <div class="faq__divider"></div>
+        <button class="faq__trigger" aria-expanded="false">
+          <span>Wie funktioniert die Überwachung nachts oder bei schlechtem Wetter?</span>
+          <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq__answer">
+          <p>Unsere Kameras sind mit Infrarottechnik und KI-gestützter Videoanalyse ausgestattet. Sie erkennen unbefugte Bewegungen zuverlässig auch bei Dunkelheit, Regen oder Sturm. Die Systeme sind für harte Außeneinsätze konzipiert und halten extremen Bedingungen stand.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <div class="faq__divider"></div>
+        <button class="faq__trigger" aria-expanded="false">
+          <span>Kann ich die Kameratürme während des Mietverhältnisses umstellen?</span>
+          <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq__answer">
+          <p>Ja. Standortwechsel innerhalb des Mietzeitraums sind ohne Aufpreis möglich. Wir koordinieren den Umzug und passen die Überwachungszonen entsprechend an.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <div class="faq__divider"></div>
+        <button class="faq__trigger" aria-expanded="false">
+          <span>Was passiert bei einem Alarm?</span>
+          <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq__answer">
+          <p>Bei einem Alarm prüft unsere Leitstelle den Vorfall per Live-Video und spricht die Täter bei Bedarf direkt über Lautsprecher mit bis zu 120 Dezibel an. Auf Wunsch wird außerdem sofort Polizei oder ein Wachdienst alarmiert. Vom Erkennen einer Bedrohung bis zur Intervention vergehen in der Regel weniger als 60 Sekunden.</p>
+        </div>
+      </div>
+
+      <div class="faq__divider"></div>
+    </div>
+
+  </div>
+</section>
+</body>
+</html>

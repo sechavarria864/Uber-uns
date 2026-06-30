@@ -3151,21 +3151,26 @@ p {
   direction: ltr; /* restores text/content direction inside each column */
 }
 
+/* ============================================================
+  SOLAR FEATURES
+   ============================================================ */
+
 .solar-features {
   background-color: #001F3F;
-  padding: 40px 24px;
+  padding: 48px 24px;
 }
 
 .solar-features__content {
-  max-width: 1280px;
+  max-width: 680px;
   margin: 0 auto;
   border-left: 3px solid #F2E519;
-  padding-left: 20px;
+  padding-left: 18px;
+  text-align: left;
 }
 
 .solar-features__headline {
   font-family: Impact, sans-serif;
-  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-size: clamp(1.35rem, 2vw, 1.9rem);
   font-weight: normal;
   text-transform: uppercase;
   line-height: 1.15;
@@ -3175,24 +3180,27 @@ p {
 
 .solar-features__sub {
   font-family: Arial, sans-serif;
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.02rem);
   font-weight: 400;
   letter-spacing: 0.01em;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.72);
   margin: 0;
   line-height: 1.7;
-  max-width: 1000px;
 }
 
 .solar-features__highlight {
-  display: inline;
+  font-family: Arial, sans-serif;
+  font-size: clamp(0.95rem, 1.1vw, 1.02rem);
   font-weight: 700;
   color: #ffffff;
+  margin: 16px 0 0 0;
+  line-height: 1.7;
 }
 
 /* Tablet */
 @media (max-width: 1023px) {
   .solar-features__content {
+    max-width: 700px;
     padding-left: 16px;
   }
 }
@@ -3200,20 +3208,26 @@ p {
 /* Mobile */
 @media (max-width: 767px) {
   .solar-features {
-    padding: 32px 20px;
+    padding: 36px 20px;
   }
 
   .solar-features__content {
+    max-width: 100%;
     padding-left: 14px;
   }
 
   .solar-features__headline {
-    font-size: clamp(1.2rem, 5vw, 1.5rem);
+    font-size: clamp(1.15rem, 5vw, 1.45rem);
   }
 
-  .solar-features__sub {
+  .solar-features__sub,
+  .solar-features__highlight {
     font-size: 0.95rem;
     line-height: 1.6;
+  }
+
+  .solar-features__highlight {
+    margin-top: 14px;
   }
 }
 

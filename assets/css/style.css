@@ -2997,17 +2997,6 @@ p {
   }
 }
 
-/* ── DATA PROTECTION — blue background override ── */
-.data-protection {
-  background-color: #001F3F;
-}
-
-.data-protection__title,
-.data-protection__subtitle,
-.data-protection__subtitle strong {
-  color: #ffffff;
-}
-
 /* ============================================================
    SOLAR INTRO SECTION — mirrors .kooi styles
    ============================================================ */

@@ -2478,7 +2478,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 2.75rem;
+  gap: 1.5rem;
   padding-right: 32px;
   max-width: 640px;
   margin-left: max(24px, calc((100vw - 1280px) / 2));

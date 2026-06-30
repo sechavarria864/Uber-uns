@@ -2767,8 +2767,8 @@ p {
   }
 
   .solar-hero__slide img {
-    object-position: left center;
-  }
+  object-position: center;
+}
 }
 
 

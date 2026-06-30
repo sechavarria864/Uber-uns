@@ -2482,9 +2482,11 @@ p {
   justify-content: center;
   align-items: flex-start;
   gap: 1.5rem;
-  padding-right: 32px;
+  width: 100%;
   max-width: 640px;
+  padding-right: 32px;
   margin-left: 0;
+  justify-self: end;
 }
 
 /* Pill badge */

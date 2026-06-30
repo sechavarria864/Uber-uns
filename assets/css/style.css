@@ -3157,14 +3157,14 @@ p {
 
 .solar-features {
   background-color: #001F3F;
-  padding: 48px 24px;
+  padding: 56px 24px;
 }
 
 .solar-features__content {
-  max-width: 680px;
+  max-width: 720px;
   margin: 0 auto;
+  padding: 28px 32px 28px 24px;
   border-left: 3px solid #F2E519;
-  padding-left: 18px;
   text-align: left;
 }
 
@@ -3197,37 +3197,14 @@ p {
   line-height: 1.7;
 }
 
-/* Tablet */
-@media (max-width: 1023px) {
-  .solar-features__content {
-    max-width: 700px;
-    padding-left: 16px;
-  }
-}
-
-/* Mobile */
 @media (max-width: 767px) {
   .solar-features {
-    padding: 36px 20px;
+    padding: 40px 20px;
   }
 
   .solar-features__content {
+    padding: 20px 20px 20px 14px;
     max-width: 100%;
-    padding-left: 14px;
-  }
-
-  .solar-features__headline {
-    font-size: clamp(1.15rem, 5vw, 1.45rem);
-  }
-
-  .solar-features__sub,
-  .solar-features__highlight {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-
-  .solar-features__highlight {
-    margin-top: 14px;
   }
 }
 
